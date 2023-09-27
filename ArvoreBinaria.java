@@ -83,8 +83,8 @@ public class ArvoreBinaria {
     public void printTree(NoArvore raiz, String prefix) {
         if (raiz != null) {
             System.out.println(prefix + "" + raiz.valor);
-            printTree(raiz.esquerda, prefix + "│   ");
-            printTree(raiz.direita, prefix + "│   ");
+            printTree(raiz.esquerda, prefix + " ");
+            printTree(raiz.direita, prefix + " ");
         }
     }
 
