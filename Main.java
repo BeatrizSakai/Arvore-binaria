@@ -1,25 +1,26 @@
 public class Main {
     public static void main(String[] args) {
-        ArvoreBinaria tree = new ArvoreBinaria();
+        ArvoreBinaria arvore = new ArvoreBinaria();
 
-        tree.inserir(50);
-        tree.inserir(30);
-        tree.inserir(20);
-        tree.inserir(40);
-        tree.inserir(70);
-        tree.inserir(60);
-        tree.inserir(80);
-        tree.printTree(tree.raiz, "");
+        arvore.inserir(50);
+        arvore.inserir(30);
+        arvore.inserir(20);
+        arvore.inserir(40);
+        arvore.inserir(70);
+        arvore.inserir(60);
+        arvore.inserir(80);
+        arvore.printArvore(arvore.raiz, "");
         
 
         int chave = 60;
-        System.out.println("\nBuscando o elemento " + chave + ": " + tree.buscar(chave));
+        System.out.println("\nBuscando o elemento " + chave + ": " + arvore.buscar(chave));
 
         chave = 90;
-        System.out.println("Buscando o elemento " + chave + ": " + tree.buscar(chave));
+        System.out.println("Buscando o elemento " + chave + ": " + arvore.buscar(chave));
 
         chave = 30;
-        tree.remover(chave);
+        arvore.remover(chave);
         System.out.println("\nRemovendo o elemento " + chave + "...");
+        arvore.printArvore(arvore.raiz, "");
     }
 }
