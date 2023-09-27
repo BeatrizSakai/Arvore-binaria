@@ -80,11 +80,11 @@ public class ArvoreBinaria {
         return minValue;
     }
 
-    public void printTree(NoArvore raiz, String prefix) {
+    public void printArvore(NoArvore raiz, String prefix) {
         if (raiz != null) {
             System.out.println(prefix + "" + raiz.valor);
-            printTree(raiz.esquerda, prefix + "│   ");
-            printTree(raiz.direita, prefix + "│   ");
+            printArvore(raiz.esquerda, prefix + " ");
+            printArvore(raiz.direita, prefix + " ");
         }
     }
 
